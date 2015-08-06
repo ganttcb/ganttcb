@@ -1,0 +1,22 @@
+@TOP_PANE_HEIGHT: 60px;
+@TOP_PANE_MARGIN: 4px;
+
+#scheduleCb {
+  .form {
+    position: absolute;
+    left: 0px;
+    height: @TOP_PANE_HEIGHT;
+    width: 100%;
+    z-index: 1;
+    margin: @TOP_PANE_MARGIN;
+  }
+  .dhx_cal_container {
+    height: 100%;
+//    height: calc(~"100% - "@TOP_PANE_HEIGHT);
+//    height: -moz-calc(~"100% - "@TOP_PANE_HEIGHT);
+//    height: -webkit-calc(~"100% - "@TOP_PANE_HEIGHT);
+//    height: -o-calc(~"100% - "@TOP_PANE_HEIGHT);
+    width: 100%;
+    padding-top: @TOP_PANE_HEIGHT;
+  }
+}
